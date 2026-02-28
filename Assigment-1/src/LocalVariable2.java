@@ -10,6 +10,8 @@ public class LocalVariable2 {
     }
 
     return value;
+
+
 }
 
 }

@@ -1,7 +1,14 @@
+import java.util.Scanner;
+
 public class LocalVariable {
      public static void main(String[] args) {
-        int Stock = 24;
+
+        Scanner scanner = new Scanner(System.in);
+        int Stock;
         int total;
+
+        System.out.print("Enter the Product Stock: ");
+        Stock = scanner.nextInt();
 
         if (Stock > 0) {
             total = Stock * 10;
@@ -10,6 +17,8 @@ public class LocalVariable {
         }
 
         System.out.println(total);
+
+        scanner.close();
     }
 
 }
