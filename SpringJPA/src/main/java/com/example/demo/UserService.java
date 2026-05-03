@@ -26,6 +26,7 @@ public class UserService {
         return userRepository.findById(id);
     }
 
+//     Update user by ID
     public User updateUser(int id, User updatedUser) {
         User existing = userRepository.findById(id)
             .orElseThrow(() -> new RuntimeException("User not found with ID: " + id));
@@ -36,6 +37,7 @@ public class UserService {
         return userRepository.save(existing);  
     }
 
+//    Delete user by ID
     public String deleteUser(int id) {
         if (!userRepository.existsById(id)) {
             throw new RuntimeException("User not found with ID: " + id);
