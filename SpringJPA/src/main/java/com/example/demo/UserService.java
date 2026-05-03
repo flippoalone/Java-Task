@@ -21,6 +21,7 @@ public class UserService {
         return userRepository.findAll();
     }
 
+//     Fetch user by ID
     public Optional<User> getUserById(int id) {
         return userRepository.findById(id);
     }
