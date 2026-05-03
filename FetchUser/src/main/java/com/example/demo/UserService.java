@@ -6,11 +6,11 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
 	public String getUserById(int id) {
-        return "User with ID " + id + " fetched from service.";
+        return "User ID " + id + " fetched service.";
     }
 
     public String getAllUsers() {
-        return "Returning all users from service.";
+        return "Returning users from service.";
     }
     
 }
